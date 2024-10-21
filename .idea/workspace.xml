@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="822f2bd3-bec8-4677-b4da-8aa6a3c4b0f1" name="Changes" comment="2110">
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/wsgi.py" afterDir="false" />
+    <list default="true" id="822f2bd3-bec8-4677-b4da-8aa6a3c4b0f1" name="Changes" comment="2110+">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UrbanDjango/task2/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/task2/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/second_task/class_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/second_task/class_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/second_task/func_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/second_task/func_template.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +98,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729493138202</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2110+">
+      <option name="closed" value="true" />
+      <created>1729499646232</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729499646232</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +125,7 @@
     <MESSAGE value="0" />
     <MESSAGE value="1" />
     <MESSAGE value="2110" />
-    <option name="LAST_COMMIT_MESSAGE" value="2110" />
+    <MESSAGE value="2110+" />
+    <option name="LAST_COMMIT_MESSAGE" value="2110+" />
   </component>
 </project>
