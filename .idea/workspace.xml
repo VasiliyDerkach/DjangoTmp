@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="822f2bd3-bec8-4677-b4da-8aa6a3c4b0f1" name="Changes" comment="2410">
-      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/third_task/price.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/third_task/price.html" afterDir="false" />
-    </list>
+    <list default="true" id="822f2bd3-bec8-4677-b4da-8aa6a3c4b0f1" name="Changes" comment="2410" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -7,7 +7,7 @@
 <body>
     <h1>Магазин</h1>
     <ul>
-        {% for a in context %}
+        {% for k,a in context %}
             <li> {{a}} <button>Купить</button></li>
         {% endfor %}
     </ul>
