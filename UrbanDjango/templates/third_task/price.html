@@ -7,9 +7,9 @@
 <body>
     <h1>Магазин</h1>
     <ul>
-        <li>Хокей <button>Купить</button></li>
-        <li>Футбол <button>Купить</button></li>
-        <li>Монополия <button>Купить</button></li>
+        {% for a in context %}
+            <li> a <button>Купить</button></li>
+        {% endfor %}
     </ul>
 
     <a href="/" class="button">Вернуться обратно</a>
