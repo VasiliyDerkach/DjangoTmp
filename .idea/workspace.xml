@@ -4,23 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="822f2bd3-bec8-4677-b4da-8aa6a3c4b0f1" name="Changes" comment="2410fin">
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/task4/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/task4/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/task4/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/task4/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/task4/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/task4/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/task4/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/card.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/mainpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/menu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/price.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DJProj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DJProj.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="822f2bd3-bec8-4677-b4da-8aa6a3c4b0f1" name="Changes" comment="2510">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/UrbanDjango/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/UrbanDjango/templates/fourth_task/menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729764788780</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="2510">
+      <option name="closed" value="true" />
+      <created>1729829620363</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1729829620363</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,6 +185,7 @@
     <MESSAGE value="2410" />
     <MESSAGE value="2410f" />
     <MESSAGE value="2410fin" />
-    <option name="LAST_COMMIT_MESSAGE" value="2410fin" />
+    <MESSAGE value="2510" />
+    <option name="LAST_COMMIT_MESSAGE" value="2510" />
   </component>
 </project>
