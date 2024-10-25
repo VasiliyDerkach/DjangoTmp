@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import class_tmpl, func_tmpl
 from task4.views import *
+from task5.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',main),
@@ -25,4 +26,5 @@ urlpatterns = [
     path('func/',func_tmpl),
     path('card/',card),
     path('price/',price),
+    path('django_sign_up/',sign_up_by_django),
 ]
