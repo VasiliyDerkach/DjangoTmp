@@ -28,8 +28,8 @@ def sign_up_by_html(request):
         else:
             info['error'] = err
             return HttpResponse(info)
-    info['type'] = 'html'
-    return render(request,'registration_page.html', context= info)
+    info['formtype'] = 'html'
+    return render(request,'fifth_task/registration_page.html', context= info)
 # Create your views here.
 def sign_up_by_django(request):
     info = {}
@@ -42,11 +42,14 @@ def sign_up_by_django(request):
             repeat_password = form.cleaned_data['repeat_password']
             age = form.cleaned_data['age']
             err = user_valid(username=username, repeat_password=repeat_password, password=password, age=age)
-            if len(err)>0:
-                info['error']=err
+            if len(err) == 0:
+                return HttpResponse(f'Приветствуем {username}!')
+            else:
+                info['error'] = err
+                return HttpResponse(info)
         else:
             form = UserRegister()
         info['form'] = form
-        info['type'] = 'django'
+        info['formtype'] = 'django'
         info['len_error'] = len(err)
-        return render(request,'registration_page.html', context=info)
+        return render(request,'fifth_task/registration_page.html', context=info)
