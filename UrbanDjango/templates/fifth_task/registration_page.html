@@ -7,7 +7,8 @@
 <body>
     <form method="post">
         {% csrf_token %}
-        {% if type=='html' %}
+        <a>type={{foкmtype}}</a>
+        {% if formtype == "html" %}
             <label for="username">
                 Введите логин
             </label>
@@ -25,11 +26,11 @@
             </label>
             <input type="text" id="age " name="age " maxlength="3" required>
             <button type="submit">Отправить</button>
-        {% else %}
-            {{ form.as_p }}
+        {% elif formtype == "django" %}
+            {{ form }}
 
         {% endif %}
-        {% if len_error>0 %}
+        {% if len_error > 0 %}
             <h1>
                 {{ error }}
             </h1>
