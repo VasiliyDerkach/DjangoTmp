@@ -8,14 +8,18 @@ def user_valid(**kwargs):
         err.pop('Пользователь уже существует')
     if kwargs['password']!=kwargs['repeat_password']:
         err.pop('Пароли не совпадают')
-    if int(kwargs['age']) < 18:
+    if kwargs['age'] < 18:
         err.pop('Вы должны быть старше 18')
+    if kwargs['age'] > 99:
+        err.pop('Возраст должен состоять не более 2 знаков')
+
     return err
 
 def sign_up_by_html(request):
     info = {}
 
     if request.method == 'POST':
+        print('html post')
         username = request.POST.get('username')
         password = request.POST.get('password')
         repeat_password = request.POST.get('repeat_password')
@@ -36,6 +40,7 @@ def sign_up_by_django(request):
     err = []
     if request.method == 'POST':
         form = UserRegister(request.POST)
+        print('django post')
         if form.is_valid():
             username = form.cleaned_data['username']
             password = form.cleaned_data['password']
@@ -47,9 +52,11 @@ def sign_up_by_django(request):
             else:
                 info['error'] = err
                 return HttpResponse(info)
-        else:
-            form = UserRegister()
-        info['form'] = form
-        info['formtype'] = 'django'
-        info['len_error'] = len(err)
-        return render(request,'fifth_task/registration_page.html', context=info)
+    else:
+        print('django non post')
+        form = UserRegister()
+        # return HttpResponse(f'Что-то пошло не так {}')
+    info['form'] = form
+    info['formtype'] = 'django'
+    info['len_error'] = len(err)
+    return render(request,'fifth_task/registration_page.html', context=info)
