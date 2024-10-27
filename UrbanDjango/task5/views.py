@@ -8,7 +8,7 @@ def user_valid(**kwargs):
         err.append('Пользователь уже существует')
     if kwargs['password']!=kwargs['repeat_password']:
         err.append('Пароли не совпадают')
-    if kwargs['age'] < 18:
+    if int(kwargs['age']) < 18:
         err.append('Вы должны быть старше 18')
     return err
 
