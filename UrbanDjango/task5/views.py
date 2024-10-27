@@ -5,21 +5,18 @@ users = ['user1','user2']
 def user_valid(**kwargs):
     err = []
     if kwargs['username'] in users:
-        err.pop('Пользователь уже существует')
+        err.append('Пользователь уже существует')
     if kwargs['password']!=kwargs['repeat_password']:
-        err.pop('Пароли не совпадают')
+        err.append('Пароли не совпадают')
     if kwargs['age'] < 18:
-        err.pop('Вы должны быть старше 18')
-    if kwargs['age'] > 99:
-        err.pop('Возраст должен состоять не более 2 знаков')
-
+        err.append('Вы должны быть старше 18')
     return err
 
 def sign_up_by_html(request):
     info = {}
 
     if request.method == 'POST':
-        print('html post')
+        # print('html post')
         username = request.POST.get('username')
         password = request.POST.get('password')
         repeat_password = request.POST.get('repeat_password')
@@ -28,10 +25,11 @@ def sign_up_by_html(request):
         err = user_valid(username=username,repeat_password=repeat_password,password=password,age=age)
         info['len_error'] = len(err)
         if len(err) == 0:
+            users.append(username)
             return HttpResponse(f'Приветствуем {username}!')
         else:
             info['error'] = err
-            return HttpResponse(info)
+            return HttpResponse(err)
     info['formtype'] = 'html'
     return render(request,'fifth_task/registration_page.html', context= info)
 # Create your views here.
@@ -40,7 +38,7 @@ def sign_up_by_django(request):
     err = []
     if request.method == 'POST':
         form = UserRegister(request.POST)
-        print('django post')
+        # print('django post')
         if form.is_valid():
             username = form.cleaned_data['username']
             password = form.cleaned_data['password']
@@ -48,14 +46,15 @@ def sign_up_by_django(request):
             age = form.cleaned_data['age']
             err = user_valid(username=username, repeat_password=repeat_password, password=password, age=age)
             if len(err) == 0:
+                users.append(username)
                 return HttpResponse(f'Приветствуем {username}!')
             else:
                 info['error'] = err
-                return HttpResponse(info)
+                return HttpResponse(err)
     else:
-        print('django non post')
+        # print('django non post')
         form = UserRegister()
-        # return HttpResponse(f'Что-то пошло не так {}')
+
     info['form'] = form
     info['formtype'] = 'django'
     info['len_error'] = len(err)
