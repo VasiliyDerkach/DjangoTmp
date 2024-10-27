@@ -26,6 +26,6 @@ urlpatterns = [
     path('func/',func_tmpl),
     path('card/',card),
     path('price/',price),
-    path('django_sign_up/',sign_up_by_html),
-    path('form/',sign_up_by_django),
+    path('form/',sign_up_by_html),
+    path('django_sign_up/',sign_up_by_django),
 ]
